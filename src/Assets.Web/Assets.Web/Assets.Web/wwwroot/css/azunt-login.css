@@ -22,7 +22,13 @@ body {
 
 @media (min-height: 1800px) {
     :root {
-        --azunt-split-point: 25%;
+        --azunt-split-point: 20%;
+    }
+}
+
+@media (min-height: 2100px) {
+    :root {
+        --azunt-split-point: 15%;
     }
 }
 
