@@ -19,18 +19,18 @@
 <div class="text-center mb-4">
     <img src="https://dummyimage.com/180x60/000/fff.png&text=Logo" alt="Logo" style="width: 180px;" class="mb-2" />
     <h2 class="mb-0">
-        <span class="text-primary">Assets</span>
-        <span class="text-warning">Tracking</span>
+        <span class="text-primary">Azunt</span>
+        <span class="text-warning">Login</span>
     </h2>
 </div>
 
-<div class="login-inner-box shadow rounded-3 bg-white text-center">
+<div class="azunt-login-inner-box">
     <div class="mb-4">
         <i class="fas fa-user-check"></i>
         <h3 class="mb-0">User Login</h3>
     </div>
 
-    <div class="alert alert-danger small" role="alert">
+    <div class="azunt-login-warning" role="alert">
         You are accessing a restricted information system. Usage may be monitored and audited.<br />
         Unauthorized use may result in penalties. Follow your organization's security policies.
     </div>
@@ -38,7 +38,7 @@
     <StatusMessage Message="@errorMessage" />
     <EditForm Model="Input" method="post" OnValidSubmit="LoginUser" FormName="login">
         <DataAnnotationsValidator />
-        <ValidationSummary class="text-danger" role="alert" />
+        <ValidationSummary class="validation-summary-errors" style="list-style: none; padding-left: 0;" role="alert" />
 
         <div class="form-floating mb-3 text-start">
             <InputText @bind-Value="Input.Email" id="Input.Email" class="form-control" placeholder="Email" autocomplete="username" />
